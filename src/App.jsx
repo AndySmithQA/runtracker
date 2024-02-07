@@ -9,13 +9,10 @@ import "./App.css";
 //Layouts
 import RootLayout from './layouts/RootLayout';
 
-
 //pages
 import New from './components/New';
 import Runs, {runsLoader} from './components/Runs';
 import RunDetails, {runDetailsLoader} from './components/RunDetails';
-
-
 
 const router = createBrowserRouter(
     createRoutesFromElements(
