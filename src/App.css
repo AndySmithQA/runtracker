@@ -100,28 +100,43 @@ form label span {
   font-weight: 900;
 }
 
-.runs > a {
+.times > a {
   display: block;
   background: red;
   padding: 20px;
+  padding-bottom: 30px;
   border-radius: 4px;
-  margin: 20px 0;
+  margin: 10px 0;
   text-decoration: none;
 }
-.runs > a:hover p {
+.times > a:hover p {
   color: black;
 }
 .runs p {
   margin: 0;
+  float: left;
 }
-.runs > a p:last-child {
+.runs{
+  margin-bottom: 10px;
+  
+}
+/* .runs > a p:last-child {
  font-size: 0.8em;
  color: #bbb;
-}
+} */
 
 .runs-details {
   background: rgba(0,0,0,0.2);
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
+}
+.splits {
+  float: right;
+  margin-right: 10px;
+  
+}
+
+.splits p{
+  margin-left: 20px;
 }
