@@ -23,6 +23,12 @@
       "date": "08/02/2024",
       "time": 21.42,
       "finalHeartRate": 183
+    },
+    {
+      "id": 5,
+      "date": "10/02/2024",
+      "time": 19.32,
+      "finalHeartRate": 181
     }
   ]
 }
