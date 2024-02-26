@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom'
 export default function New() {
     const [date, setDate] = useState('')
     const [time, setTime] = useState('')
-    const [finalHeartRate, setHr] = useState('')
+    const [fHR, setHr] = useState('')
     const navigate = useNavigate()
 
     const handleSubmit = async (event) =>{
             event.preventDefault()
     
-            const run = { date, time, finalHeartRate}
+            const run = { date, time, fHR}
             
             fetch('http://localhost:3001/runs', {
                 method: 'POST',
@@ -50,7 +50,7 @@ export default function New() {
                     <p>Final heart rate (BPM)</p>
                     <input 
                         type="number"
-                        value={finalHeartRate}
+                        value={fHR}
                         onChange = {(e) => setHr(e.target.value)}
                         placeholder='e.g.170'
                     />

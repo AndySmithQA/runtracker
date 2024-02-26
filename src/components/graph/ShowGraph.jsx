@@ -25,7 +25,7 @@ export default function ShowGraph(){
                 },{
                     label: "Heart Rate",
                     yAxisID: "hr",
-                    data: data.map((run) => run.finalHeartRate),
+                    data: data.map((run) => run.fHR),
                     borderColor: "Red",
                     backgroundColor: [
                         "black"

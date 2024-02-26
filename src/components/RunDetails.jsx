@@ -9,7 +9,7 @@ export default function RunDetails() {
             <h2>Run Details </h2> <hr /><br></br>
             <h3>Time taken to run 5k - {run.time} (MM:SS)</h3>
             <p>On - {run.date}</p>
-            <p>Final Heart Rate - {run.finalHeartRate} BPM</p>
+            <p>Final Heart Rate - {run.fHR} BPM</p>
             <p>Back to the <Link to="/">Runs Page</Link></p>
         </div>
     )
