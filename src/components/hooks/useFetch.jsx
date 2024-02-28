@@ -4,7 +4,7 @@ export default function useFetch(url, initChartData) {
 
     useEffect(() => {
         (async function fetchData() {
-        const response = await fetch("http://localhost:3001/runs")
+        const response = await fetch(url)
         .catch(error => {
             console.error("[ERROR] Cannot fetch because", error);
             if (error.toString().includes("NetworkError")) {
