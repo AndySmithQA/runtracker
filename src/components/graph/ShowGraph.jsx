@@ -10,6 +10,12 @@ export default function ShowGraph(){
     const [chartData, setChartData] = useState(null);
 
     const initChartData = (data) => {
+        const quickestTime = Math.min(...data.map((run) => run.time));
+        const fastestk1 = Math.min(...data.map((run) => run.k1));
+        const fastestk2 = Math.min(...data.map((run) => run.k2));
+        const fastestk3 = Math.min(...data.map((run) => run.k3));
+        const fastestk4 = Math.min(...data.map((run) => run.k4));
+        const fastestk5 = Math.min(...data.map((run) => run.k5));
         setChartData({
             labels: data.map((run) => run.date),
             datasets: [

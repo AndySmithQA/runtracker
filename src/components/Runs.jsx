@@ -3,8 +3,23 @@ import ShowGraph from './graph/ShowGraph'
 
 export default function Runs() {
     const runs = useLoaderData()
+    const quickestTime = Math.min(...runs.map((run) => run.time));
+    const fastestk1 = Math.min(...runs.map((run) => run.k1));
+    const fastestk2 = Math.min(...runs.map((run) => run.k2));
+    const fastestk3 = Math.min(...runs.map((run) => run.k3));
+    const fastestk4 = Math.min(...runs.map((run) => run.k4));
+    const fastestk5 = Math.min(...runs.map((run) => run.k5));
     return (
         <div className="runs">
+            <div className="stat">Record Run - {quickestTime}</div>
+        
+                <p className='rec'>Fastest 1st K - {fastestk1}</p>
+                <p className='rec'>Fastest 2nd K - {fastestk2}</p>
+                <p className='rec'>Fastest 3rd K - {fastestk3}</p>
+                <p className='rec'>Fastest 4th K - {fastestk4}</p>
+                <p className='rec'>Fastest 5th K - {fastestk5}</p>
+           
+            
              <ShowGraph />
              <div className="times">
             {runs.map(run => (
