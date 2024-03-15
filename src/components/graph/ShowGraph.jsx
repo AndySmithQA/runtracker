@@ -16,6 +16,16 @@ export default function ShowGraph(){
         const fastestk3 = Math.min(...data.map((run) => run.k3));
         const fastestk4 = Math.min(...data.map((run) => run.k4));
         const fastestk5 = Math.min(...data.map((run) => run.k5));
+
+        const averageK1 = data.reduce((sum, run) => sum + run.k1, 0) / data.length;
+        const averageK2 = data.reduce((sum, run) => sum + run.k2, 0) / data.length;
+        const averageK3 = data.reduce((sum, run) => sum + run.k3, 0) / data.length;
+        const averageK4 = data.reduce((sum, run) => sum + run.k4, 0) / data.length;
+        const averageK5 = data.reduce((sum, run) => sum + run.k5, 0) / data.length;
+
+        const averageTime = data.reduce((sum, run) => sum + run.time, 0) / data.length;
+
+        
         setChartData({
             labels: data.map((run) => run.date),
             datasets: [
